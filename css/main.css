@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.section{
+    margin:20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+    flex-wrap: wrap; /* اجازه می‌دهد کارت‌ها روی موبایل جمع شوند بدون تغییر ساختار */
+}
+
+/* کارت‌ها */
+.section-ul-li-1, .section-ul-li-2, .section-ul-li-3, .section-ul-li-4-div {
+    background-color: #f5f5f5;
+    border: 1px solid rgba(0, 0, 0, 1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    border-radius: 0.6rem;
+    padding: 12px 24px;
+    margin: 15px;
+}
+
+/* div داخلی کارت‌ها */
+.section-ul-li-1-div, .section-ul-li-2-div, .section-ul-li-3-div, .section-ul-li-4-div{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* متن گرادیانت */
+.section-ul-li-1-div-p{
+    background: linear-gradient(to right, #f58529, #dd2a7d, #00d4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.section-ul-li-2-div-p{
+    background: linear-gradient(to right, #0088cc,#00d4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.section-ul-li-3-div-p{
+    background: linear-gradient(to right, #25d366,#127c7e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.section-ul-li-4-div-p{
+    background: linear-gradient(to right, #ff7e5f,#feb47b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+p{
+    font-size: 4rem;
+}
+
+/* مدیا کوئری‌ها برای ریسپانسیو */
+@media (max-width: 1024px) {
+    .section{
+        padding: 50px 20px;
+        margin: 15px;
+    }
+
+    .section-ul-li-1-div, .section-ul-li-2-div, .section-ul-li-3-div, .section-ul-li-4-div{
+        gap: 20px;
+    }
+
+    p{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .section{
+        padding: 40px 10px;
+        margin: 10px;
+    }
+
+    .section-ul-li-1-div, .section-ul-li-2-div, .section-ul-li-3-div, .section-ul-li-4-div{
+        gap: 15px;
+    }
+
+    p{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section{
+        padding: 30px 10px;
+        margin: 5px;
+    }
+
+    .section-ul-li-1, .section-ul-li-2, .section-ul-li-3, .section-ul-li-4-div{
+        padding: 10px 15px;
+        margin: 10px;
+    }
+
+    .section-ul-li-1-div, .section-ul-li-2-div, .section-ul-li-3-div, .section-ul-li-4-div{
+        gap: 10px;
+    }
+
+    p{
+        font-size: 2rem;
+    }
+}
